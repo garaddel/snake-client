@@ -13,8 +13,18 @@ const handleUserInput = (key, conn) => {
   } else if (key === 'd') {
     console.log("Move: right");
     conn.write("Move: right");
+  } else if (key === "1") {
+    console.log("Say: Yo!");
+    conn.write("Say: Yo!");
+  } else if (key === "2") {
+    console.log("Say: Noob!");
+    conn.write("Say: Noob!");
+  } else if (key === "3") {
+    console.log("Say: GG!");
+    conn.write("Say: GG!");
   }
 };
+  
 
 const setupInput = function (conn) {
   const stdin = process.stdin;
