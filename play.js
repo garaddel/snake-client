@@ -4,6 +4,6 @@ const { setupInput } = require("./input.js");
 console.log("Connecting ...");
 const conn = connect();
 
-setupInput();
+setupInput(conn);
 
 // setup interface to handle user input from stdin
